@@ -6,7 +6,6 @@ import Coin from './Coin.js'
 
 
 
-
 function App() {
   const [coins, setCoins] = useState([]);
   const [searchInput, setSearchInput] = useState('');
@@ -41,10 +40,10 @@ function App() {
             name={coin.name}
             price={coin.current_price}
             symbol={coin.symbol}
-            marketcap={coin.total_volume}
-            volume={coin.market_cap}
+            volume={coin.total_volume}
             image={coin.image}
             priceChange={coin.price_change_percentage_24h}
+            marketcap={coin.market_cap}
           />
         );
       })}
